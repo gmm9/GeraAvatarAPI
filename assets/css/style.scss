@@ -1,0 +1,109 @@
+@use './scss_modules/variables' as v;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: v.$Font;
+}
+
+body {
+    background-color: v.$Bg-principal;
+    color: v.$Branco;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &__title {
+        font-size: 52px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-shadow: 0px 10px 9px rgba(0,0,0,0.64);
+    }
+    &__box {
+        width: 520px;
+        // border: 1px solid white;
+        height: 720px;
+        border-radius: 12px;
+        background-color: v.$Azul-escuro;
+        box-shadow: 13px 17px 15px -3px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        &--img {
+            width: 300px;
+            height: 300px;
+            // border: 1px solid red;
+            background-color: v.$Azul-claro;
+            margin-top: 15px;
+            border-radius: 30px;
+            box-shadow: 13px 17px 15px -3px rgba(0,0,0,0.5);
+
+        }
+        &--btn {
+            background-color: v.$Azul-claro;
+            display: flex;
+            padding: 15px;
+            border-radius: 12px;
+            height: 44px;
+            width: 200px;
+            font-size: 22px;
+            align-items: center;
+            &:active {
+                box-shadow: inset 13px 17px 15px -3px rgba(0,0,0,0.1);
+            }
+        }
+    }
+    &__select {
+        width: 200px;
+        height: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap: 15px;
+        align-items: center;
+        &--radio {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            
+        }
+    }
+}
+
+.form__input {
+    border-radius: 12px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 230px;
+}
+.btn__form {
+    color: white;
+    padding: 10px;
+    width: 200px;
+    justify-content: center;
+    border: none;
+    &:active {
+        box-shadow: inset 13px 17px 15px -3px rgba(0,0,0,0.1);
+    }
+}
+
+.text__creditos {
+    color: v.$Verde;
+    &>a {
+        color: v.$Azul-claro;
+    }
+}

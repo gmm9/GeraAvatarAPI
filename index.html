@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gerador de Avatar</title>
+
+</head>
+<body>
+    <main class="container">
+        <h1 class="container__title">Gerador de Avatar</h1>
+
+            <div class="container__box">
+                <img class="container__box--img" src="https://avatars.dicebear.com/api/adventurer/gmm9.svg" alt="mostra o avatar de forma aleatoria">
+                <a class="container__box--btn" target="_blank" href="#">Salvar a imagem</a>
+
+                <form class="container__form">
+                    <label for="select">Escolha um estilo de arte</label>
+                    <select name="select" class="container__select">
+                        <option value="adventurer" selected>Adventurer</option>
+                        <option value="adventurer-neutral" >Adventurer-neutral</option>
+                        <option value="avataaars">Avataaars</option>
+                        <option value="big-ears">Big-ears</option>
+                        <option value="big-ears-neutral">Big-ears-neutral</option>
+                        <option value="big-smile">Big-smile</option>
+                        <option value="bottts">Bottts</option>
+                        <option value="croodles">Croodles</option>
+                        <option value="identicon">identicon</option>
+                        <option value="micah">Micah</option>
+                        <option value="miniavs">Miniavs</option>
+                        <option value="open-peeps">Open-peeps</option>
+                        <option value="personas">Personas</option>
+                        <option value="pixel-art">Pixel-art</option>
+                        <option value="pixel-art-neutral">Pixel-art-neutral</option>
+                      </select>  
+
+                      <label for="sexo">Escolha o sexo do seu boneco</label>
+                        <div class="container__form--radio">
+
+                          <input type="radio" name="sexo" value="female">Feminino
+                          <input type="radio" name="sexo" value="male">Masculino
+                        </div>
+                        <label for="name">Escreva um nome de usuário</label>
+                        <input class="form__input" type="text" name="name" placeholder="Escreva um nome de usuario">
+                        <button class="container__box--btn btn__form" type="submit">Gerar Avatar</button>
+                    </form>
+                </div>
+                <p class="text__creditos">Resalva, nem todo estilo escolhido tem como definir o sexo, por isso,
+                    caso troque o sexo e continue a mesma imagem, não é um erro.
+                </p>
+                <p class="text__creditos">Front-end da API criada sem fins lucrativos apenas para treinar, faça você mesmo
+                     pelo link <a target="_blank" href="https://avatars.dicebear.com/">API</a>.</p>
+                <p class="text__creditos">Feito por <a href="https://portfoliogmm9.vercel.app/" target="_blank">Gabriel Moura</a> &#9829</p>
+
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
